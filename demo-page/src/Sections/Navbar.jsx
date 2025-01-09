@@ -15,13 +15,12 @@ const Navbar = () => {
 
   return (
     <div className="bg-navbar_bg text-white">
-      <div className="flex justify-between items-center py-3 px-5 md:px-10">
-        {/* Logo */}
+      <div className="flex justify-center gap-24 items-center py-2 px-5 md:px-10">
+
         <div className="text-2xl font-semibold">
           <h1>Firstbench</h1>
         </div>
 
-        {/* Hamburger Menu for Mobile/Tablets */}
         <div className="lg:hidden">
           {menuOpen ? (
             <IoMdClose
@@ -36,7 +35,6 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Navigation Links */}
         <div
           className={`${
             menuOpen ? "block" : "hidden"
@@ -62,7 +60,6 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* Profile and Notifications */}
         <div className="flex gap-6 items-center">
           <div>
             <BsBell />
