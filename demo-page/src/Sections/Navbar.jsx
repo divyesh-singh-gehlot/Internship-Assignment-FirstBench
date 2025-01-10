@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { HiOutlineSparkles } from "react-icons/hi2";
 import { PiCastleTurret } from "react-icons/pi";
@@ -15,12 +15,12 @@ const Navbar = () => {
 
   return (
     <div className="bg-navbar_bg text-white">
-      <div className="flex justify-center gap-24 items-center py-2 px-5 md:px-10">
-
+      <div className="flex justify-between items-center py-2 px-5 md:px-10">
         <div className="text-2xl font-semibold">
           <h1>Firstbench</h1>
         </div>
 
+        {/* Mobile Menu Toggle */}
         <div className="lg:hidden">
           {menuOpen ? (
             <IoMdClose
@@ -35,10 +35,11 @@ const Navbar = () => {
           )}
         </div>
 
+        {/* Navbar Links */}
         <div
           className={`${
             menuOpen ? "block" : "hidden"
-          } lg:flex flex-col lg:flex-row absolute lg:static bg-navbar_bg w-full lg:w-auto top-14 left-0 lg:top-0 lg:left-auto gap-7 px-5 lg:px-0 lg:gap-7 lg:place-content-center lg:items-center transition-all`}
+          } lg:flex flex-col lg:flex-row absolute lg:static bg-navbar_bg w-full lg:w-auto top-14 left-0 lg:top-0 lg:left-auto gap-7 px-5 lg:px-0 lg:gap-7 lg:place-content-center lg:items-center transition-all z-50`}
         >
           <span className="flex gap-2 place-items-center py-2 lg:py-0">
             <FaHome /> Dashboard
@@ -60,6 +61,7 @@ const Navbar = () => {
           </span>
         </div>
 
+        {/* Profile Section */}
         <div className="flex gap-6 items-center">
           <div>
             <BsBell />

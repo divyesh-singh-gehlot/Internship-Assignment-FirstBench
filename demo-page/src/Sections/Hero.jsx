@@ -14,9 +14,9 @@ import { RiArrowUpLine } from "react-icons/ri";
 
 const Hero = () => {
   return (
-    <div className="h-[93.9vh] w-[84vw] mx-auto py-4 flex gap-5">
+    <div className="mt-5 lg:mt-0 h-fit lg:h-[93.9vh] w-[85vw] mx-auto flex flex-col lg:py-4 lg:flex-row gap-10 lg:gap-5">
 
-      <div className="w-[20vw] h-full bg-blue-50 flex flex-col rounded-lg shadow-md border">
+      <div className="w-full lg:w-[20vw] h-full bg-blue-50 flex flex-col rounded-lg shadow-md border">
 
         <div className="flex flex-col items-center py-4 h-fit w-full">
           <img src={hero_left} alt="hero-left-1" className='h-20' />
@@ -41,7 +41,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className='bg-blue-50 flex flex-col w-[15vw] mx-auto gap-3 px-2 py-2 my-5 rounded-sm'>
+          <div className='bg-blue-50 flex flex-col w-5/6 lg:w-[15vw] mx-auto gap-3 px-2 py-2 my-5 rounded-sm'>
             <div className='flex place-items-center gap-3'>
               <div className='h-fit w-fit px-1 py-2 bg-blue-300'>
                 <FaUser fill='white' className='size-8' />
@@ -56,7 +56,7 @@ const Hero = () => {
               <div className='bg-gray-500 text-white text-center rounded-3xl px-2 '>92% ACCURACY</div>
             </div>
           </div>
-          <div className='w-[15vw] mx-auto mb-3'>
+          <div className='w-5/6 lg:w-[15vw] mx-auto mb-3'>
             <h1 className='text-sm font-bold'>
               Improve Your Marks
             </h1>
@@ -67,7 +67,7 @@ const Hero = () => {
 
 
 
-        <div className='bg-white mt-5 w-5/6 mx-auto'>
+        <div className='bg-white mt-5 w-5/6 mx-auto mb-5 lg:mb-0'>
           <div className='pt-2 pl-3'>
             <h1 className='text-xl font-bold'>Revisit Paper</h1>
             <p className='text-[12px] my-1 text-gray-700'>Challenge your friends by simply sharing a link to this test</p>
@@ -75,7 +75,7 @@ const Hero = () => {
               <button className='bg-blue-800 text-white px-16 py-0.5 my-3'>Visit</button>
             </div>
             <div className='flex gap-1 justify-center'>
-              <IoIosInformationCircleOutline className='fill-gray-400 size-3' /><p className='text-[8px] pb-3 text-gray-400'>Instructions for how to upload your handwritten material is given</p>
+              <IoIosInformationCircleOutline className='fill-gray-400 size-3' /><p className='text-[8px] pb-3 text-gray-400 w-5/6'>Instructions for how to upload your handwritten material is given</p>
 
             </div>
           </div>
@@ -84,13 +84,13 @@ const Hero = () => {
 
 
       <div className='w-fit h-fit flex flex-col gap-5'>
-        <div className='h-fit w-[60vw] flex gap-5'>
-          <div className='w-[20vw] rounded-lg border-2 h-[30vh] flex gap-2 py-2 px-2'><div className='border-2 mt-1 border-gray-400 w-fit h-fit'><IoIosArrowDown size={10} className='fill-gray-400' /></div><div className='text-sm text-gray-500'>Compare Accuracy</div></div>
-          <div className='w-[20vw] rounded-lg border-2 h-[30vh] flex gap-2 py-2 px-2'><div className='border-2 mt-1 border-gray-400 w-fit h-fit'><IoIosArrowDown size={10} className='fill-gray-400' /></div><div className='text-sm text-gray-500'>Compare Accuracy</div></div>
-          <div className='w-[20vw] rounded-lg border-2 h-[30vh] flex gap-2 py-2 px-2'><div className='border-2 mt-1 border-gray-400 w-fit h-fit'><IoIosArrowDown size={10} className='fill-gray-400' /></div><div className='text-sm text-gray-500'>Compare Accuracy</div></div>
+        <div className='h-fit w-[85vw] lg:w-[60vw] flex flex-col lg:flex-row gap-5'>
+          <div className='w-[85vw] lg:w-[20vw] rounded-lg border-2 h-[30vh] lg:h-[30vh] flex gap-2 py-2 px-2'><div className='border-2 mt-1 border-gray-400 w-fit h-fit'><IoIosArrowDown size={10} className='fill-gray-400' /></div><div className='text-sm text-gray-500'>Compare Accuracy</div></div>
+          <div className='w-[85vw] lg:w-[20vw] rounded-lg border-2 h-[30vh] lg:h-[30vh] flex gap-2 py-2 px-2'><div className='border-2 mt-1 border-gray-400 w-fit h-fit'><IoIosArrowDown size={10} className='fill-gray-400' /></div><div className='text-sm text-gray-500'>Compare Accuracy</div></div>
+          <div className='w-[85vw] lg:w-[20vw] rounded-lg border-2 h-[30vh] lg:h-[30vh] flex gap-2 py-2 px-2'><div className='border-2 mt-1 border-gray-400 w-fit h-fit'><IoIosArrowDown size={10} className='fill-gray-400' /></div><div className='text-sm text-gray-500'>Compare Accuracy</div></div>
         </div>
-        <div className='h-fit w-[60vw] flex gap-5'>
-          <div className='w-[15vw] rounded-lg border-2 h-[24vh] py-2 px-2'>
+        <div className='h-fit w-[85vw] lg:w-[60vw] flex gap-5 flex-wrap lg:flex-nowrap'>
+          <div className='w-[85vw] lg:w-[15vw] rounded-lg border-2 h-[24vh] py-2 px-2'>
             <div className='flex gap-2'>
               <div>
                 <FaArrowUpRightDots size={15} className='mt-1 fill-gray-400' />
@@ -99,8 +99,8 @@ const Hero = () => {
                 Improvements
               </div>
             </div>
-            <div className='text-[12px] my-2 '>Subject Understanding</div>
-            <div className='flex flex-row flex-wrap text-[7px] text-white gap-2'>
+            <div className='text-xl md:text-2xl lg:text-sm my-2 '>Subject Understanding</div>
+            <div className='flex flex-row flex-wrap text-[7px] md:text-[18px] lg:text-[7px] text-white gap-2'>
               <div className='py-1 px-2 border rounded-3xl bg-gray-400'>Geography</div>
               <div className='py-1 px-2 border rounded-3xl bg-green-600'>Politics</div>
               <div className='py-1 px-2 border rounded-3xl bg-gray-400'>Current Affairs</div>
@@ -112,89 +112,87 @@ const Hero = () => {
               <div className='py-1 px-2 border rounded-3xl bg-gray-400'>Economics</div>
             </div>
           </div>
-          <div className='w-[15vw] rounded-lg border-2 h-[24vh] flex gap-2 py-2 px-2 flex-col'>
+          <div className='w-[85vw] lg:w-[15vw] rounded-lg border-2 h-[36vh] md:h-[24vh] lg:h-[24vh] flex gap-5 lg:gap-2 py-2 px-2 flex-col'>
             <div className='flex gap-1'>
               <div><IoIosTimer size={15} className='mt-1 fill-gray-400' /></div>
               <div className='text-sm text-gray-500'>Response Time</div>
             </div>
-            <div className='bg-purple-600 text-white w-[12vh] text-[12px] px-1 py-1 mt-2'>Std Time - 2min</div>
+            <div className='bg-purple-600 text-white w-[30vw] lg:w-[6vw] text-[12px] px-1 py-1 mt-2'>Std Time - 2min</div>
             <div className='flex justify-between place-items-end bg-blue-50 border-2 border-dashed border-blue-400'>
               <span className='text-gray-400 px-1 py-2'><span className='text-2xl'>60%</span> Ans took</span>
               <div className='flex flex-row px-1 py-2'><div className='text-blue-700 flex flex-row place-items-center gap-1'><span><RiArrowUpLine size={25} color='red' /></span>2min</div></div>
             </div>
-            <div className='text-md font-bold text-center border-t-2 border-gray-300 pt-2'>You are <span className='text-red-700'>Slow</span> !</div>
+            <div className='text-xl lg:text-md font-bold text-center border-t-2 border-gray-300 pt-2'>You are <span className='text-red-700'>Slow</span> !</div>
           </div>
-          <div className='w-[15vw] rounded-lg border-2 h-[24vh] flex-col gap-2 py-2 px-2'>
+          <div className='w-[85vw] lg:w-[15vw] rounded-lg border-2 h-fit flex-col py-2 px-2'>
             <div className='flex gap-2'>
               <div><FaArrowUpRightDots size={15} className='mt-1 fill-gray-400' /></div>
               <div className='text-sm text-gray-500'>Approach Data</div>
             </div>
-            <div className='flex gap-1 border-2 px-1 py-1 mt-2 border-blue-300'>
+            <div className='flex gap-1 border-2 px-1 py-1 mt-4 lg:mt-2 border-blue-300'>
               <span className='bg-blue-50 px-2 py-0.8 w-fit text-blue-700 font-bold text-[12px]'>25<span className='text-[8px] text-green-600'>%</span></span>
               <div className='text-[10px]'>Based on <span className='text-blue-700 font-bold'>Facts</span></div>
             </div>
-            <div className='flex gap-1 border-2 px-1 py-1 mt-2 border-blue-300'>
+            <div className='flex gap-1 border-2 px-1 py-1 mt-4 lg:mt-2 border-blue-300'>
               <span className='bg-blue-50 px-2 py-0.8 w-fit text-blue-700 font-bold text-[12px]'>25<span className='text-[8px] text-green-600'>%</span></span>
               <div className='text-[10px]'>Based on <span className='text-blue-700 font-bold'>Facts</span></div>
             </div>
-            <div className='flex gap-1 border-2 px-1 py-1 mt-2 border-blue-300'>
+            <div className='flex gap-1 border-2 px-1 py-1 mt-4 lg:mt-2 border-blue-300'>
               <span className='bg-blue-50 px-2 py-0.8 w-fit text-blue-700 font-bold text-[12px]'>25<span className='text-[8px] text-green-600'>%</span></span>
               <div className='text-[10px]'>Based on <span className='text-blue-700 font-bold'>Facts</span></div>
             </div>
-            <div className='flex gap-1 border-2 px-1 py-1 mt-2 border-blue-300'>
+            <div className='flex gap-1 border-2 px-1 py-1 mt-4 lg:mt-2 border-blue-300 mb-3'>
               <span className='bg-blue-50 px-2 py-0.8 w-fit text-blue-700 font-bold text-[12px]'>25<span className='text-[8px] text-green-600'>%</span></span>
               <div className='text-[10px]'>Based on <span className='text-blue-700 font-bold'>Facts</span></div>
             </div>
           </div>
-          <div className='w-[15vw] rounded-lg border-2 h-[24vh] flex flex-col gap-2 py-2 px-2'>
+          <div className='w-[85vw] lg:w-[15vw] rounded-lg border-2 h-[28vh] lg:h-[24vh] flex flex-col gap-2 py-2 px-2'>
             <div className='flex gap-2'>
               <div><HiOutlineSparkles size={15} color='gray' className='mt-1' /></div>
               <div className='text-sm text-gray-500'>Suggestions</div>
             </div>
-            <div className='flex gap-0.5'>
+            <div className='flex gap-4 md:gap-10 lg:gap-2 justify-center pb-3 mx-auto'>
               <div className='flex flex-col gap-3 w-1/3'>
-                <div className='bg-purple-600 text-white w-[6vh] text-[10px] px-1 mt-2'>Q. 1-12</div>
-                <div className='flex bg-blue-50 border-2 border-dashed border-blue-400 h-fit w-fit'>
-                  <span className='text-black text-xl font-semibold p-2'>40<span className='text-sm'>sec</span></span>
+                <div className='bg-purple-600 text-white w-[20vw] lg:w-[6vh] text-[16px] lg:text-[10px] px-1 mt-2'>Q. 1-12</div>
+                <div className='flex bg-blue-50 border-2 border-dashed border-blue-400 h-fit w-[20vw] lg:w-fit'>
+                  <span className='text-black text-3xl md:text-4xl lg:text-xl font-semibold py-2 md:py-8 lg:py-2 px-2.5 lg:px-1 mx-auto'>40<span className='text-sm'>sec</span></span>
                 </div>
                 <span className='text-gray-400 text-md text-center font-bold'>Easy</span>
               </div>
               <div className='flex flex-col gap-3 w-1/3'>
-                <div className='bg-purple-600 text-white w-[6vh] text-[10px] px-1 mt-2'>Q. 12-32</div>
-                <div className='flex bg-blue-50 border-2 border-dashed border-blue-400 h-fit w-fit'>
-                  <span className='text-black text-xl font-semibold p-2'>1.5<span className='text-sm'>min</span></span>
+                <div className='bg-purple-600 text-white w-[20vw] lg:w-[6vh] text-[16px] lg:text-[10px] px-1 mt-2'>Q. 12-32</div>
+                <div className='flex bg-blue-50 border-2 border-dashed border-blue-400 h-fit w-[20vw] lg:w-fit'>
+                  <span className='text-black text-3xl md:text-4xl lg:text-xl font-semibold py-2 md:py-8 lg:py-2 mx-auto px-1'>1.5<span className='text-sm'>min</span></span>
                 </div>
                 <span className='text-green-400 text-md text-center font-bold'>Medium</span>
               </div>
               <div className='flex flex-col gap-3 w-1/3'>
-                <div className='bg-purple-600 text-white w-[6vh] text-[10px] px-1 mt-2'>Q. 32-40</div>
-                <div className='flex bg-blue-50 border-2 border-dashed border-blue-400 h-fit w-fit'>
-                  <span className='text-black text-xl font-semibold p-2'>3<span className='text-sm'>min</span></span>
+                <div className='bg-purple-600 text-white w-[20vw] lg:w-[6vh] text-[16px] lg:text-[10px] px-1 mt-2'>Q. 32-40</div>
+                <div className='flex bg-blue-50 border-2 border-dashed border-blue-400 h-fit w-[20vw] lg:w-fit lg:pr-0'>
+                  <span className='text-black text-3xl md:text-4xl lg:text-xl font-semibold py-2 md:py-8 lg:py-2 px-4 lg:px-1 text-center mx-auto'>3<span className='text-sm'>min</span></span>
                 </div>
                 <span className='text-red-400 text-md text-center font-bold'>Hard</span>
               </div>
-              <div></div>
-              <div></div>
             </div>
           </div>
         </div>
-        <div className='h-fit w-[60vw] flex gap-5'>
-          <div className='w-[30vw] rounded-lg border-2 h-[30.9vh] flex flex-col gap-2 py-2 px-2'>
+        <div className='h-fit w-[85vw] lg:w-[60vw] flex flex-col lg:flex-row gap-5'>
+          <div className='w-[85vw] lg:w-[30vw] rounded-lg border-2 h-[35vh] lg:h-[30.9vh] flex flex-col gap-2 py-2 px-2'>
             <div className='flex gap-2'>
               <div><IoIosGitCompare size={15} className='mt-1 fill-gray-400' /></div>
               <div className='text-sm text-gray-500'>Compare Accuracy</div>
             </div>
             <div className='flex justify-center'>
-              <img src={compare_accuracy} alt="compare-accuracy" className='h-48 w-full' />
+              <img src={compare_accuracy} alt="compare-accuracy" className='h-fit md:h-72 lg:h-48 w-full' />
             </div>
           </div>
-          <div className='w-[30vw] rounded-lg border-2 h-[30.9vh] flex flex-col gap-2 py-2 px-2'>
+          <div className='w-[85vw] lg:w-[30vw] rounded-lg border-2 h-[35vh] lg:h-[30.9vh] flex flex-col gap-2 py-2 px-2'>
             <div className='flex gap-2'>
               <div><IoIosTimer size={15} className='mt-1 fill-gray-400' /></div>
               <div className='text-sm text-gray-500'>Time Taken</div>
             </div>
             <div className='flex justify-center'>
-              <img src={time_taken} alt="compare-accuracy" className='h-48 w-full' />
+              <img src={time_taken} alt="time-taken" className='h-fit md:h-72 lg:h-48 w-full' />
             </div>
           </div>
         </div>
