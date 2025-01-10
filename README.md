@@ -23,7 +23,7 @@ This is a responsive dashboard clone built with React as part of an internship a
 Clone the Repository:
 
 ```bash
-  git clone https://github.com/your-username/dashboard-clone.git
+  git clone https://github.com/divyesh-singh-gehlot/dashboard-clone.git
   cd dashboard-clone
 ```
 
