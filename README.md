@@ -25,6 +25,7 @@ Clone the Repository:
 ```bash
   git clone https://github.com/divyesh-singh-gehlot/dashboard-clone.git
   cd dashboard-clone
+  cd demo-page
 ```
 
 Install Dependencies:
